@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carl Vincent V. Pagatpatan - Web Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: #f0f7f4;
+            color: #222;
+            line-height: 1.6;
+        }
+        nav {
+            background-color: #1b4332;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 3px solid #ffd166;
+        }
+        nav .logo {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffd166;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ffd166;
+            text-decoration: underline;
+        }
+        header {
+            background-color: #2d6a4f;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 4px solid #ffd166;
+        }
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: white;
+        }
+        header p {
+            font-size: 15px;
+            color: #ffd166;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 6px;
+            border: 1px solid #b7e4c7;
+            border-left: 5px solid #2d6a4f;
+        }
+        .card h2 {
+            color: #1b4332;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #ffd166;
+            padding-bottom: 5px;
+            font-size: 20px;
+        }
+        .card ul {
+            margin-left: 20px;
+        }
+        .card ul li {
+            margin-bottom: 8px;
+        }
+        .card strong {
+            color: #1b4332;
+        }
+        .code-box {
+            background-color: #14281d;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            border: 2px solid #ffd166;
+            overflow-x: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 13px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1b4332;
+            color: white;
+            margin-top: 40px;
+            font-size: 14px;
+            border-top: 3px solid #ffd166;
+        }
+        footer span {
+            color: #ffd166;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">JPCS Inc. Application Portfolio</div>
+        <ul>
+            <li><a href="#personal">Personal Info</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#javacode">Java Code</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Carl Vincent V. Pagatpatan</h1>
+        <p>Applicant for Junior Programmer Position | BSIT Student</p>
+    </header>
+
+    <div class="container">
+
+        <!-- 1. Personal Information -->
+        <section id="personal" class="card">
+            <h2>a. Personal Information</h2>
+            <p>Hello! I am Carl Vincent V. Pagatpatan, a dedicated and passionate first-year Bachelor of Science in Information Technology student residing in Camiing, Guimba, Nueva Ecija. I am applying for the Junior Programmer position at JPCS Inc. to showcase my technical skills, logic formulation, and commitment to building functional software solutions.</p>
+            <br>
+            <ul>
+                <li><strong>Full Name:</strong> Carl Vincent V. Pagatpatan</li>
+                <li><strong>Address:</strong> Camiing, Guimba, Nueva Ecija</li>
+                <li><strong>Primary Goal:</strong> To secure a Junior Programmer role and build scalable web and desktop applications.</li>
+            </ul>
+        </section>
+
+        <!-- 2. Educational Background -->
+        <section id="education" class="card">
+            <h2>b. Educational Background</h2>
+            <ul>
+                <li><strong>Tertiary:</strong> Our Lady of the Sacred Heart College of Guimba, Inc. (OLSHCO) &mdash; Bachelor of Science in Information Technology (Present)</li>
+                <li><strong>Secondary:</strong> Completed Senior High School and Junior High School with strong foundational background in computer literacy and general academic tracks.</li>
+            </ul>
+        </section>
+
+        <!-- 3. Skills -->
+        <section id="skills" class="card">
+            <h2>c. Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Java (Console-based applications, control structures, OOP basics)</li>
+                <li><strong>Web Development:</strong> HTML5, CSS3, Responsive Web Layouts</li>
+                <li><strong>Version Control:</strong> Git and GitHub Repository Management</li>
+                <li><strong>Soft Skills:</strong> Logical Problem Solving, Team Collaboration, Adaptability</li>
+            </ul>
+        </section>
+
+        <!-- 4. Java Code -->
+        <section id="javacode" class="card">
+            <h2>d. Java Code (CC102 Final Performance Task)</h2>
+            <p>Below is the complete source code for my console-based game developed as part of my CC102 requirement:</p>
+            <br>
+            <div class="code-box">
+<pre><code>import java.util.Scanner;
+import java.util.Random;
+
+public class ConsoleGamePeTa {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+        
+        System.out.println("========================================");
+        System.out.println("   WELCOME TO THE CC102 CONSOLE GAME    ");
+        System.out.println("========================================");
+        
+        int targetNumber = random.nextInt(10) + 1;
+        int guess = 0;
+        int attempts = 0;
+        
+        System.out.print("Guess a number between 1 and 10: ");
+        
+        while (guess != targetNumber) {
+            if (scanner.hasNextInt()) {
+                guess = scanner.nextInt();
+                attempts++;
+                
+                if (guess &lt; targetNumber) {
+                    System.out.print("Too low! Try again: ");
+                } else if (guess &gt; targetNumber) {
+                    System.out.print("Too high! Try again: ");
+                } else {
+                    System.out.println("Congratulations! You guessed the number in " + attempts + " attempts.");
+                }
+            } else {
+                System.out.print("Invalid input. Please enter a valid number: ");
+                scanner.next();
+            }
+        }
+        
+        scanner.close();
+    }
+}
+</code></pre>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <span>Carl Vincent V. Pagatpatan</span> | CC101 &amp; CC102 Final Examination Portfolio</p>
+    </footer>
+
+</body>
+</html>
